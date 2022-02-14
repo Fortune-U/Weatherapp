@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Neonderthaw&family=Noto+Sans+JP&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url('Scene-20.jpg');
+    background-size: 500% 200%;
+    background-repeat: no-repeat;
+    color: #ffffff;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+.timezone{
+    margin: 3em 0em 2em 0em;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+.temp{
+    font-size: 6em;
+    font-family: 'Neonderthaw', cursive;
+    
+}
+.temptrature,.wind,.wind-speed{
+    display: flex;
+    
+}
+.temp-unit{
+    margin-top: 1.5em;
+    font-family: 'Noto Sans JP', cursive;
+}
+.weather-condition,.wind,.wind-speed{
+    font-family:'Noto Sans JP', cursive;
+    font-weight: 500;
+    text-align: center;
+}
+.wind-ctn{
+    display: flex;
+    justify-content: space-around;
+    margin: 2em 0em 4em 0em;
+}
+
+.future-forecast li{
+    display: flex;
+    padding: 1em 2em;
+    justify-content: space-between;
+    width: 100%;
+    font-family:'Noto Sans JP', cursive ;
+}
+    
