@@ -12,7 +12,7 @@ window.addEventListener('load', ()=> {
        navigator.geolocation.getCurrentPosition(position =>{
            long = position.coords.longitude;
            lat = position.coords.latitude;
-           const api = `http://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&limit=20&appid=06d31b27cf5436b39fef6ec8922bd42a`;
+           const api = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&limit=20&appid=06d31b27cf5436b39fef6ec8922bd42a`;
            
            fetch(api)
            .then(response => response.json())
@@ -26,7 +26,7 @@ window.addEventListener('load', ()=> {
            summary.textContent = description;
            windSpeed.textContent = wind_speed;
            console.log(icon);
-           locationIcon.innerHTML = `<img src="http://openweathermap.org/img/wn/${icon}@2x.png"/>`;
+           locationIcon.innerHTML = `<img src="https://openweathermap.org/img/wn/${icon}@2x.png"/>`;
            })
            .catch(error => {
             console.error('Error:', error);
