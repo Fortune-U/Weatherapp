@@ -1,8 +1,6 @@
 alert("Javascript is enabled");
-window.addEventListener('onfocus',()=>{
-bob();
-});
-window.addEventListener('load', (bob)=> {
+
+window.addEventListener('load', ()=> {
  
     let long;
     let lat;
