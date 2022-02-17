@@ -1,4 +1,4 @@
-alert ="hi";
+alert("Javascript is enabled");
 window.addEventListener('load', ()=> {
  
     let long;
@@ -37,6 +37,6 @@ window.addEventListener('load', ()=> {
 
     
     }else {
-        alert = 'location cannot be accessed';
+        alert('location cannot be accessed');
     }
 });
