@@ -1,7 +1,5 @@
-alert("Javascript is enabled");
-
 window.addEventListener('load', ()=> {
- 
+    alert('this function is working');
     let long;
     let lat;
     let timeZone = document.querySelector(".timezone");
