@@ -35,5 +35,7 @@ window.addEventListener('load', ()=> {
        });
 
     
+    }else {
+        alert = 'location cannot be accessed';
     }
 });
