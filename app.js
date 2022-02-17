@@ -1,3 +1,4 @@
+alert ="hi";
 window.addEventListener('load', ()=> {
  
     let long;
