@@ -14,7 +14,7 @@ window.addEventListener('load', ()=> {
            long = position.coords.longitude;
            lat = position.coords.latitude;
            const api = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&limit=20&appid=06d31b27cf5436b39fef6ec8922bd42a`;
-           alert(lat);
+    
            fetch(api)
            .then(response => response.json())
            .then(data => { 
