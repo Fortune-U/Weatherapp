@@ -58,4 +58,6 @@ body{
     width: 100%;
     font-family:'Noto Sans JP', cursive ;
 }
-.weather-
+.weather-icon{
+    text-align: center;
+}
