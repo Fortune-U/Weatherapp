@@ -32,7 +32,7 @@ window.addEventListener('load', ()=> {
     let daySeven = document.querySelector(".day-seven");
 
     if(navigator.geolocation){
-       navigator.geolocation.getCurrentPosition(position =>{
+       navigator.geolocation.getCurrentPosition((position,error) =>{
         
            long = position.coords.longitude;
            lat = position.coords.latitude;
@@ -167,7 +167,5 @@ window.addEventListener('load', ()=> {
        });
 
     
-    }else {
-        alert('location cannot be accessed');
-    }
+    }else {alert('location cannot be accessed');}
 });
