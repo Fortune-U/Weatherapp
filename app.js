@@ -4,9 +4,16 @@ window.addEventListener('load', ()=> {
     let lat;
     let timeZone = document.querySelector(".timezone");
     let temprature = document.querySelector(".temp");
-    let  summary= document.querySelector(".weather-condition");
+    let summary= document.querySelector(".weather-condition");
     let windSpeed = document.querySelector(".wind-deg");
+    //
     let locationIcon = document.querySelector(".weather-icon");
+    let secondIcon = document.querySelector(".second-icon");
+    let thirdIcon = document.querySelector(".third-icon");
+    let fourthIcon = document.querySelector(".fourth-icon");
+    let fifthIcon = document.querySelector(".fifth-icon");
+    let sixthIcon = document.querySelector(".sixth-icon");
+    let seventhIcon = document.querySelector(".seventh-icon");
     //Forecast
     let listOne = document.querySelector(".li-one");
     let listTwo = document.querySelector(".li-two");
@@ -78,13 +85,14 @@ window.addEventListener('load', ()=> {
 
 
         //days forecast functions
-        function dayone(){
-            let unix_timestamp = data.daily[0].dt;
-            var date = new Date(unix_timestamp * 1000);
-            var day = getDay[date.getUTCDay()];
-            console.log(day);
-            dayOne.textContent = day;
-        }
+        // function dayone(){
+        //     let unix_timestamp = data.daily[0].dt;
+        //     var date = new Date(unix_timestamp * 1000);
+        //     var day = getDay[date.getUTCDay()];
+        //     console.log(day);
+        //     dayOne.textContent = day;
+            
+        // }
         
         function daytwo(){
             let unix_timestamp = data.daily[1].dt;
@@ -92,41 +100,59 @@ window.addEventListener('load', ()=> {
             var day = getDay[date.getUTCDay()];
             console.log(day);
             dayTwo.textContent = day;
+            const{icon} = data.daily[1].weather[0];
+            secondIcon.innerHTML = `<img src="https://openweathermap.org/img/wn/${icon}@2x.png"/>`;
+           // .innerHTML = `<img src="https://openweathermap.org/img/wn/${icon}@2x.png"/>`;
         }
         function daythree(){
             let unix_timestamp = data.daily[2].dt;
             var date = new Date(unix_timestamp * 1000);
             var day = getDay[date.getUTCDay()];
             console.log(day);
+            const{icon} = data.daily[2].weather[0];
+            thirdIcon.innerHTML = `<img src="https://openweathermap.org/img/wn/${icon}@2x.png"/>`;
             dayThree.textContent = day;
+           // .innerHTML = `<img src="https://openweathermap.org/img/wn/${icon}@2x.png"/>`;
         }
         function dayfour(){
             let unix_timestamp = data.daily[3].dt;
             var date = new Date(unix_timestamp * 1000);
             var day = getDay[date.getUTCDay()];
             console.log(day);
+            const{icon} = data.daily[3].weather[0];
+            fourthIcon.innerHTML = `<img src="https://openweathermap.org/img/wn/${icon}@2x.png"/>`;
             dayFour.textContent = day;
+           // .innerHTML = `<img src="https://openweathermap.org/img/wn/${icon}@2x.png"/>`;
         }
         function dayfive(){
             let unix_timestamp = data.daily[4].dt;
             var date = new Date(unix_timestamp * 1000);
             var day = getDay[date.getUTCDay()];
             console.log(day);
+            const{icon} = data.daily[4].weather[0];
+            fifthIcon.innerHTML = `<img src="https://openweathermap.org/img/wn/${icon}@2x.png"/>`;
             dayFive.textContent = day;
+           // .innerHTML = `<img src="https://openweathermap.org/img/wn/${icon}@2x.png"/>`;
         }
         function daysix(){
             let unix_timestamp = data.daily[5].dt;
             var date = new Date(unix_timestamp * 1000);
             var day = getDay[date.getUTCDay()];
             console.log(day);
+            const{icon} = data.daily[5].weather[0];
+            sixthIcon.innerHTML = `<img src="https://openweathermap.org/img/wn/${icon}@2x.png"/>`;
             daytSix.textContent = day;
+           // .innerHTML = `<img src="https://openweathermap.org/img/wn/${icon}@2x.png"/>`;
         }
         function dayseven(){
             let unix_timestamp = data.daily[6].dt;
             var date = new Date(unix_timestamp * 1000);
             var day = getDay[date.getUTCDay()];
             console.log(day);
+            const{icon} = data.daily[6].weather[0];
+            seventhIcon.innerHTML = `<img src="https://openweathermap.org/img/wn/${icon}@2x.png"/>`;
             daySeven.textContent = day;
+           // .innerHTML = `<img src="https://openweathermap.org/img/wn/${icon}@2x.png"/>`;
         }
 
         

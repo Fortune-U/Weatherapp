@@ -7,7 +7,10 @@
 }
 
 body{
-    background: url('Scene-20.jpg');
+    /* background: url('Scene-20.jpg'); */
+    background: #085078;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #85D8CE, #085078);
     background-size: 500% 200%;
     background-repeat: no-repeat;
     color: #ffffff;
@@ -18,7 +21,18 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
  
+}
+.temprature-container{
+    /* border: 1px solid ; */
+    padding: 1em 3em;
+    margin: 1em 1em;
+    background: #085078;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 5px;
+    
 }
 
 .timezone{
@@ -60,4 +74,17 @@ body{
 }
 .weather-icon{
     text-align: center;
+}
+ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: capitalize;
+    background: #085078;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 5px;
+}
+ul li div{
+    display: flex;
 }
