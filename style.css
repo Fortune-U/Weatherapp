@@ -15,7 +15,7 @@ body{
 
 .container{
     background: url('Lake/Lake-day/Lake-day.png'); 
-    background-size: 100% 85%;
+    background-size: 150% 85%;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
