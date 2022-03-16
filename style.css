@@ -35,7 +35,7 @@ body{
 }
 
 .timezone{
-    margin: 0.5em 0em 2em 0.5em;
+    margin: 0.5em 0em 1em 0.5em;
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 600;
     font-size: 2em;
@@ -45,6 +45,7 @@ body{
 .temp{
     font-size: 8em;
     font-family: 'Neonderthaw', cursive;
+    margin-top: -0.25em;
     
 }
 .temptrature,.wind,.wind-speed{
@@ -137,9 +138,9 @@ margin: 0em 0.5em 0em 0.5em;
 }
 
 .selections{
-  background-color: #B1BAAE;
+  background-color: #9797A1 ;
   color: black;
-  margin-top: 1em;
+  margin-top: 4em;
   margin-bottom: 0em;
   
 }
