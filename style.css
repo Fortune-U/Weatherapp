@@ -64,7 +64,7 @@ body{
 .wind-ctn{
     display: flex;
     justify-content: space-around;
-    margin: -16em 0em 0em 0em;
+    margin: -15em 0em 0em 0em;
     flex-direction: column;
     background-color: #9797A1;
     padding: 1em 0em 0em 0em;
@@ -124,7 +124,7 @@ font-size: 1em;
 margin: 0em 0.5em 0em 0.5em;
 }
 .w-humidity,.w-uvi{
-    margin-top: 1em;
+    margin-top: 1.5em;
 }
 
 .icon{
