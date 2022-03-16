@@ -6,6 +6,9 @@ window.addEventListener('load', ()=> {
     let temprature = document.querySelector(".temp");
     let summary= document.querySelector(".weather-condition");
     let windSpeed = document.querySelector(".wind-deg");
+    let ctntemp = document.querySelector(".ctn-temp");
+    let ctnUvi = document.querySelector(".uvi");
+    let ctnHumidity = document.querySelector(".humidity");
     //
     let locationIcon = document.querySelector(".weather-icon");
     let secondIcon = document.querySelector(".second-icon");
@@ -42,9 +45,12 @@ window.addEventListener('load', ()=> {
            .then(response => response.json())
            .then(data => { 
            console.log(data)
-           const {temp,weather,wind_speed} = data.current;
+           const {temp,weather,wind_speed,humidity,uvi} = data.current;
            const tempC = temp - 273.15;
            temprature.textContent = tempC.toFixed([1]);
+           ctntemp.textContent = tempC.toFixed([1]);
+           ctnUvi.textContent = uvi;
+           ctnHumidity.textContent = humidity;
            const {icon,description} = data.current.weather[0];
            timeZone.textContent = data.timezone;
            summary.textContent = description;
@@ -112,8 +118,8 @@ window.addEventListener('load', ()=> {
             const{icon} = data.daily[2].weather[0];
             thirdIcon.innerHTML = `<img src="https://openweathermap.org/img/wn/${icon}@2x.png"/>`;
             dayThree.textContent = day;
-           // .innerHTML = `<img src="https://openweathermap.org/img/wn/${icon}@2x.png"/>`;
-        }
+            // .innerHTML = `<img src="https://openweathermap.org/img/wn/${icon}@2x.png"/>`;
+         }
         function dayfour(){
             let unix_timestamp = data.daily[3].dt;
             var date = new Date(unix_timestamp * 1000);
