@@ -19,7 +19,7 @@ body{
     background-attachment: fixed;
     background-size: cover;
     /* background: url('Lake/Lake-sunset/Lake-sunset.png');  */
-    background-size: 150% 50%;
+    background-size: 120% 50%;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
