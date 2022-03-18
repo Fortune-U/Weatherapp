@@ -127,11 +127,24 @@ display: flex;
 flex-direction: row;
 font-size: 1em;
 margin: 0em 0.5em 0em 0.5em;
+
 }
 .w-humidity,.w-uvi{
     margin-top: 1.5em;
 }
+.w-temp p,.w-humidity p,.w-uvi p,.w-wind p,.wind-speed{
+color: #070000;
+padding-left: 0.1em;
+}
+.w-temp div,.w-humidity div,.w-uvi div,.w-wind div{
+color: #B1BAAE;
 
+}
+.deg-sign{
+    padding-top: 1em;
+    font-size: 2em;
+    
+}
 .icon{
     background-color: #B1BAAE;
     display: flex;
@@ -143,7 +156,7 @@ margin: 0em 0.5em 0em 0.5em;
 }
 
 .selections{
-  background-color: #9797A1 ;
+  background-color: #f8f8ff ;
   color: black;
   margin-top: 0.8em;
   margin-bottom: 14em;
@@ -159,7 +172,7 @@ margin: 0em 0.5em 0em 0.5em;
   padding: 2em 0em 5em 1em;
   font-family:'Noto Sans JP', cursive;
     font-weight: 500;
-    color: #ffffff;
+    color: #070000;
   
 }
 
