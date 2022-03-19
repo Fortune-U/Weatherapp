@@ -34,6 +34,35 @@ window.addEventListener('load', ()=> {
     let daytSix = document.querySelector(".day-six");
     let daySeven = document.querySelector(".day-seven");
 
+    let darkMode =localStorage.getItem('darkMode');
+    const darkModeToggle = document.querySelector('.toggle-mode');
+    
+
+    const enableDarkMode = () => {
+       document.body.classList.add("darkmode");
+       
+
+       localStorage.setItem('darkmode','enabled');
+    };
+    const disableDarkMode = () => {
+      document.body.classList.remove("darkmode");
+
+      localStorage.setItem('darkmode', null);
+   };
+
+   if(darkMode === 'enabled'){
+      enableDarkMode();
+   }
+
+darkModeToggle.addEventListener('click',() => {
+   darkMode = localStorage.getItem('darkMode');
+   if(darkMode !== "enabled"){
+      enableDarkMode();
+   }else{
+      disableDarkMode();
+   }
+})
+
     if(navigator.geolocation){
        navigator.geolocation.getCurrentPosition((position,error) =>{
         
@@ -171,6 +200,7 @@ window.addEventListener('load', ()=> {
           });
 
        });
+       
 
     
     }else {alert('location cannot be accessed');}
