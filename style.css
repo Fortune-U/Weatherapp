@@ -58,6 +58,9 @@ body.dark  .wind-speed{
 body.dark .label{
     background-color: #ffffff;
 }
+body.dark .ball{
+    background-color: #070000;
+}
 
 .checkbox {
 	opacity: 0;
