@@ -24,7 +24,7 @@ body{
     display: flex;
     flex-direction: column;
     padding-bottom: 20em;
-    transition: background 0.2s linear;
+    transition: background 0.2s ease;
     
     
  
